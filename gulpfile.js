@@ -164,12 +164,12 @@ export const build = gulp.series(
   copy,
   copyImages,
   optimizeImages,
+  svg,
+  sprite,
     gulp.parallel(
     stylesBuild,
     html,
     scripts,
-    svg,
-    sprite,
     createWebp
   ),
 );
@@ -185,12 +185,12 @@ clean,
 copy,
 copyImages,
 optimizeImages,
+svg,
+sprite,
 gulp.parallel(
 stylesBuild,
 html,
 scripts,
-svg,
-sprite,
 createWebp
 ),
 gulp.series(
